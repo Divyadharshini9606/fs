@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Bus Booking Feedback</title>
+
+<style>
+
+body{
+    font-family: Arial;
+    background: linear-gradient(135deg,#74ebd5,#ACB6E5);
+}
+
+.container{
+    background:white;
+    width:350px;
+    margin:auto;
+    margin-top:60px;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0px 0px 10px gray;
+}
+
+h2{
+    text-align:center;
+}
+
+input, textarea, select{
+    width:95%;
+    padding:8px;
+    margin:6px 0;
+}
+
+button{
+    width:100%;
+    padding:10px;
+    background:#4CAF50;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Bus Booking Feedback</h2>
+
+<form action="/submit" method="POST">
+
+<input type="text" name="name" placeholder="Enter Name" required>
+
+<input type="email" name="email" placeholder="Enter Email" required>
+
+<input type="text" name="phone" placeholder="Enter Phone Number">
+
+<textarea name="review" placeholder="Write your bus review"></textarea>
+
+<select name="rating">
+<option value="1">1 Star ⭐</option>
+<option value="2">2 Stars ⭐⭐</option>
+<option value="3">3 Stars ⭐⭐⭐</option>
+<option value="4">4 Stars ⭐⭐⭐⭐</option>
+<option value="5">5 Stars ⭐⭐⭐⭐⭐</option>
+</select>
+
+<button type="submit">Submit Feedback</button>
+
+</form>
+
+</div>
+
+</body>
+
+</html>
